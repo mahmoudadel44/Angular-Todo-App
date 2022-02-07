@@ -1,0 +1,135 @@
+.home {
+  background: #2980b9;
+  background: -webkit-linear-gradient(to top, #85beb7, #5fb0d3);
+  background: linear-gradient(to top, #85beb7, #5fb0d3);
+  height: 657px;
+  width: 100%;
+}
+.home .text-white {
+  margin-top: 45px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: "Carattere", cursive;
+}
+.home .addAndFilterTitles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+.home .filterText {
+  color: #fff;
+  font-size: 18px;
+}
+.home .addTaskBtn button {
+  width: 110px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #133653;
+  border: none;
+  border-radius: 4px;
+}
+.home .addTaskBtn i {
+  margin-right: 5px;
+}
+.home .taskElements {
+  background: #fff;
+  height: 105px;
+  margin-top: 10px;
+  border-radius: 4px;
+  box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+  padding: 10px;
+}
+.home .taskElements .taskElement {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.home .taskElements .taskElement input {
+  background: #F5F5F5;
+  height: 51px;
+  border: none;
+}
+.home .taskElements .taskElement input:hover,select:hover {
+  border: 1px solid #000;
+}
+.home .taskElements .taskElement input:focus,
+.home .taskElements .taskElement input:focus-visible,
+select:focus-visible,
+select:focus {
+  border: 1px solid #175a86;
+  outline: none;
+}
+select {
+  border: navajowhite;
+  padding: 5px;
+  width: 100px;
+  height: 50px;
+  border-radius: 4px;
+}
+.deletedAndDone{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.deletedAndDone .group1Title{
+  min-width: 94px;
+  background: #3c7486;
+  color: #FFF;
+  text-align: center;
+  padding: 10px 5px;
+  border-radius: 3px;
+  height: 40px;
+  font-size: 16px;
+}
+.deletedAndDone button{
+  border: none;
+  background: rgb(134, 134, 134);
+  color: #FFF;
+  padding: 10px;
+  border-radius: 3px;
+}
+.deletedAndDone button i{
+  margin-right: 6px;
+}
+.deleteBtn{
+  margin-right: 6px;
+}
+.home .allItems{
+  display: flex;
+  flex-direction: column;
+}
+.home .allItems .itemOperations{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFF;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.home .allItems .itemOperations .deleteAndSelectBtn button{
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:none;
+  color:"#FFF"
+}
+.deleteAndSelectBtn i{
+  color: #FFF;
+}
+.deleteAndSelectBtn .deleteItemBtn{
+  background: #FA9BA9;
+  margin-right: 10px;
+}
+.deleteAndSelectBtn .selectItemBtn{
+  background: #87D9A0;
+}

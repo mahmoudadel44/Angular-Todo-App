@@ -1,0 +1,56 @@
+<mat-toolbar style="background: #4D708E;">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+    (click)="sideNav.open()"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <span class="example-spacer text-white text-center">Today</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="over" #sideNav>
+    <div (click)="sideNav.close()" class="canelContainer">
+      <i class="fas fa-times-circle fa-2x"></i>
+    </div>
+
+    <div class="linkContainer">
+      <i class="fas fa-home"></i>
+      <span class="space">Home</span>
+    </div>
+    <div class="linkContainer" routerLink="about">
+      <i class="far fa-ballot"></i>
+      <span class="space">All</span>
+    </div>
+    <div class="linkContainer" routerLink="contactus">
+      <i class="fad fa-calendar"></i>
+      <span class="space">Today</span>
+    </div>
+    <div class="linkContainer" routerLink="contactus">
+      <i class="fas fa-calendar-check"></i>
+      <span class="space">Week</span>
+    </div>
+        <div class="linkContainer" routerLink="contactus">
+    <i class="fas fa-check-circle"></i>
+      <span class="space">Done</span>
+    </div>
+           <div class="linkContainer" routerLink="contactus">
+    <i class="fas fa-trash-alt"></i>
+      <span class="space">Deleted</span>
+    </div>
+              <div class="linkContainer" routerLink="contactus">
+    <i class="fas fa-folder"></i>
+      <span class="space">Groups</span>
+
+     </div>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- ///////////////////////////////////////////////////////////////////////// -->

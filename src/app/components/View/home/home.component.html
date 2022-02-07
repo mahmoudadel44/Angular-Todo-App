@@ -1,0 +1,130 @@
+<div class="d-flex flex-column">
+  <section class="home">
+    <div class="container">
+      <div class="row centering-vh">
+        <div class="text-white animate__animated animate__fadeInDown">
+          Welcome to Home Page
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="addAndFilterTitles animate__animated animate__fadeInDown">
+            <span class="filterText">Filter By</span>
+            <div class="addTaskBtn">
+              <button><i class="fas fa-plus-circle"></i> New Task</button>
+            </div>
+          </div>
+          <div class="taskElements d-flex animate__animated animate__fadeInDown">
+            <div class="d-flex flex-column">
+              <span class="mb-2">Date</span>
+              <mat-form-field appearance="fill">
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="picker" />
+                <mat-datepicker-toggle
+                  matSuffix
+                  [for]="picker"
+                ></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div class="taskElement">
+              <span class="mb-2">Title</span>
+              <input class="p-2" type="text" placeholder="Enter Title :" />
+            </div>
+            <div class="taskElement">
+              <span class="mb-2">Group</span>
+              <mat-form-field appearance="fill">
+                <mat-label>Choose Group</mat-label>
+                <mat-select>
+                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{ food.viewValue }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="deletedAndDone animate__animated animate__fadeInDown">
+            <span class="group1Title">Group1</span>
+            <div>
+              <button class="deleteBtn">
+                <i class="fas fa-trash-alt"></i>Delete Selected
+              </button>
+              <button class="doneBtn"><i class="fas fa-check"></i>Done</button>
+            </div>
+          </div>
+          <div class="allItems animate__animated animate__fadeInDown">
+            <div class="itemOperations">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                  Cofee Bears
+                  </label>
+              </div>
+              <div class="deleteAndSelectBtn d-flex">
+                <button class="deleteItemBtn"><i class="fas fa-trash-alt"></i></button>
+                <button class="selectItemBtn"><i class="fas fa-check"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+            <div class="deletedAndDone animate__animated animate__fadeInDown">
+            <span class="group1Title">Group2</span>
+          </div>
+          <div class="allItems">
+            <div class="itemOperations">
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                  Cofee Bears
+                  </label>
+              </div>
+              <div class="deleteAndSelectBtn d-flex">
+                <button class="deleteItemBtn"><i class="fas fa-trash-alt"></i></button>
+                <button class="selectItemBtn"><i class="fas fa-check"></i></button>
+              </div>
+            </div>
+          </div>
+
+ <!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+            <div class="deletedAndDone animate__animated animate__fadeInDown">
+            <span class="group1Title">Group3</span>
+          </div>
+          <div class="allItems animate__animated animate__fadeInDown">
+            <div class="itemOperations">
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                  Cofee Bears
+                  </label>
+              </div>
+              <div class="deleteAndSelectBtn d-flex">
+                <button class="deleteItemBtn"><i class="fas fa-trash-alt"></i></button>
+                <button class="selectItemBtn"><i class="fas fa-check"></i></button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section>
+</div>
